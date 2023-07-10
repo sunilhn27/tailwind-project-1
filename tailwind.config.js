@@ -6,12 +6,22 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      sans: ['"Josefin Sans"', 'ui-sans-serif', 'system-ui'],
+    },
+
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'my_bg_image': "url('/asserts/Hero.png')",
+        'my_bg_circle': "url('/asserts/Circle.png')",
+        'my_bg_shape': "url('/asserts/Shape.png')"
+
       },
+      colors: {
+        'login-blue': '#128C76',
+        'register-oraange': '#F56B8D'
+      },
+
     },
   },
   plugins: [],
