@@ -6,21 +6,27 @@ import Group from '@/asserts/Group.png'
 
 function Chart() {
     return (
-        <div className='my-16 bg-slate-200 '>
+        <div className='mt-16 bg-[#ECF4FD] bg-scale-x-100 bg-my_bg_vector bg-no-repeat bg-left-bottom relative'>
+            <Image className='absolute bottom-1' src={Vector} height={270} width={631}></Image>
+            <div className='flex items-center justify-evenly  w-[100%]   h-[696px]   bg-left-bottom  font-sans '>
 
-            <div className=' flex flex-row w-fit mx-32 h-[696px] justify-center items-center font-sans '>
-        
-                <div className='flex-1 flex-col border-2 border-red-400'>
-                    <h1 className='text-7xl font-bold mb-8'>
-                        $7M+ paid out to investors
-                    </h1>
-                    <p className='absolute text-start text-3xl text-gray-400 w-[570px]'>
-                        Next Invest has already paid out over $7M in cash returns to investors. Earn potential cash payments through unique revenue-share and debt financing investments.
-                    </p>
+                <div className=' flex flex-col w-[50%]'>
+                    <div>
+                        <h1 className='relative text-5xl font-bold mb-8 w-[50%]'>
+                            $7M+ paid out to investors
+                        </h1>
+                    </div>
+                    <div className='text-start text-3xl text-gray-400'>
+
+                        <p className='relative'>
+                            Next Invest has already paid out over $7M in cash returns to investors. Earn potential cash payments through unique revenue-share and debt financing investments.
+                        </p>
+                    </div>
                 </div>
-                <div className='flex-1 border-2 border-red-400'>
-                    <Image src={chart}></Image>
+                <div className=' '>
+                    <Image src={chart} height={272} width={631}></Image>
                 </div>
+
 
             </div>
 

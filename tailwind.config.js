@@ -11,10 +11,15 @@ module.exports = {
     },
 
     extend: {
+      scale: {
+        '-100': '-1',
+      },
       backgroundImage: {
         'my_bg_image': "url('/asserts/Hero.png')",
         'my_bg_circle': "url('/asserts/Circle.png')",
-        'my_bg_shape': "url('/asserts/Shape.png')"
+        'my_bg_shape': "url('/asserts/Shape.png')",
+        'my_bg_vector': "url('/src/asserts/Vector.png')"
+
 
       },
       colors: {
